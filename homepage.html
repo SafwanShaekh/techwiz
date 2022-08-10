@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS CDN FRO BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--font cdn-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    
+    #animat{
+        justify-content: left;
+        text-align: left;
+        width: 100%;
+        height: 100vh;
+        color: rgb(93, 6, 6);
+        margin-top: 12%;
+        margin-left: 5%;
+      
+        
+    }
+    .bgimg{
+    background-image: url(images/wallpaper1.jpg);
+    background-size: 100% 100%;
+ 
+    width: 100%;
+    height: 550px;
+}
+.video-container {
+    width: 50%;
+overflow: hidden;
+display:inline-block;
+   
+}
+
+
+#video {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    
+    left: 15%;
+    top: 13%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #e5e2e2; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: rgb(55, 54, 54); 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(12, 12, 12); 
+}
+.back-img{
+  background-image: url(images/wallpaper5.png);
+  background-size: 100% 100%;
+    width: 100%;
+    height: 350px;
+}
+.card-body{
+  width:100%;
+  height:250px;
+  border-radius: 48px;
+
+}
+.flip-card {
+  background-color: rgb(64, 62, 62);
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color:antiquewhite;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  background-color: rgb(140, 135, 135);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2e2f30;
+  color: white;
+  transform: rotateY(180deg);
+}
+    
+  </style>
+</head>
+<body style="overflow-x: hidden;">
+  <!-- START of background image-->
+  <div class="bgimg ">
+ 
+    <!--START of navigation bar-->
+    <nav class="navbar navbar-expand-sm   "id="navbar" >
+        <div class="navbar-header">
+        <a href="" class="navbar-brand mt-2 ml-4" ><img src="images/logo.png"  width="150px"alt=""></a>
+        </div>
+        <button class="navbar-toggler bg-warning" data-toggle="collapse" data-target="#navbarcontent">
+          
+
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarcontent">
+           
+        <ul class=" nav navbar-nav">
+            
+            <li class="nav-item ">
+                <a href="" class="nav-link text-white" style="font-size: medium;">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a href="" class="nav-link text-white "style="font-size:medium;">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="" class="nav-link  dropdown-toggle text-white" data-toggle="dropdown"style="font-size: medium;">Category</a>
+                <ul class="dropdown-menu">
+                    <li><a href="women.html"  class="dropdown-item"style="font-size: medium;">Women fashion</a>
+                    </li>
+                    <li>
+                   
+                        <a href="men.html"  class="dropdown-item"style="font-size: medium;" >Men fashion</a>
+                    </li> 
+
+                     <li>
+                   
+                        <a href="fragrance.html"  class="dropdown-item" style="font-size: medium;">Fragrance</a>
+                    </li> 
+                     <li>
+                        
+                        <a href="makeup.html"  class="dropdown-item" style="font-size: medium;">Make-Up</a>
+                    </li> 
+                     <li>
+                     
+                        <a href="skincare.html"  class="dropdown-item" style="font-size: medium;" >Skincare</a>
+                    </li>
+                      <li>
+                      
+                        <a href="kids&baby.html" class="dropdown-item" style="font-size: medium;">Kids & Baby</a>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link text-white" style="font-size: medium;">About us</a>
+            </li>
+        </ul>
+        <ul class=" nav navbar-nav" style="margin-left: 700px;">
+            <li class="nav-item">
+                <a href="login.html" class="nav-link text-white" style="font-size: medium; font-weight: bold;">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="signup.html" class="nav-link text-white" style="font-size: medium;font-weight: bold">Signup</a>
+            </ul>
+            </div>
+    </nav>
+    
+      <!-- END of navigation bar-->
+      <!--START of animated input-->
+ <div  class="row">
+    <div class="col-sm-6" >
+<div id="animat">
+        <h1><span class="auto-input"></span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laudantium molestiae obcaecati animi doloribus assumenda, ex natus corrupti accusantium, officia, perspiciatis laborum distinctio consequatur! Dolorem reiciendis, eum doloremque saepe at est iusto, temporibus voluptates tempore assumenda doloribus?</p>
+      </div>
+         </div>
+    </div>
+    <!--END of animated input-->
+    </div>
+    <!--END of background image-->
+    
+<!--START of griding-->
+<div class="container">
+<h1 class="text-center" style="font-family: Montserrat, sans-serif; color:rgb(93, 6, 6); ;">USING GRIDING 3-COLUMNS</h1>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body"> <img src="images/order.gif"  width="100%" height="230px"alt=""></div>
+      
+    </div>
+     <h2 class="text-center" style="font-family: Montserrat, sans-serif; color:rgb(93, 6, 6); ;">Order</h2>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body"> <img src="images/packed.gif"  width="100%" height="230px"alt=""></div>
+    </div>
+      <h2 class="text-center" style="font-family: Montserrat, sans-serif; color:rgb(93, 6, 6); ;">Packed</h2>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body"> <img src="images/bike.gif"  width="100%" height="230px"alt=""></div>
+    </div>
+     <h2 class="text-center" style="font-family: Montserrat, sans-serif; color:rgb(93, 6, 6); ;">Deliver</h2>
+  </div>
+</div>
+</div>
+<!--END of griding-->
+<!--Strat of flip log in form -->
+<div class="container" >
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+     <h1 style="margin-top:50% ;">LOG IN</h1>
+      </div>
+      <div class="flip-card-back">
+        <form  method="post">
+          <label style="margin-top: 40px;"><H3>EMAIL:</H3></label>
+          <br>
+          <input type="email" placeholder="enter email" style="border-radius:48px ;">
+          <br>
+          <label ><H3>PASSWORD:</H3></label>
+          <input type="password" placeholder="enter password"  style="border-radius:48px ;">
+          <br>
+          <br>
+          <button type="button" class="bg-warning" style="border-radius: 48px;border-color:transparent"> SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--START OF SCRIPT OF ANIMATED TEXT-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+    <script>
+        var typed = new Typed(".auto-input", {
+     strings: ["THIS INCLUDE FIRST ", "AND SECOND ASSIGNMENT"],
+     typeSpeed: 125,
+     backSpeed: 125,
+     loop: true
+   }
+   );
+     </script>
+       <!--END OF SCRIPT OF ANIMATED TEXT-->
+   <!--START OF BOOTSTRAP CDN-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--END OF SCRIPT OF ANIMATED TEXT-->
+</body>
+</html>
